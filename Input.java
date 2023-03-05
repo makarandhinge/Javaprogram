@@ -22,5 +22,6 @@ public class Input {
        // System.out.println(d);
        Boolean a = s.hasNextInt();
        System.out.println(a);
+       s.close();
     }
 }
