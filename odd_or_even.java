@@ -8,6 +8,6 @@ public class odd_or_even{
             System.out.println("Adult");
         }else{
             System.out.println("Not Adult");
-        }
+        }sc.close();
     }
 }
