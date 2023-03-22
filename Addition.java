@@ -1,3 +1,5 @@
+package JAVA
+
 class Addition
 {
     public static void main(String args[])
