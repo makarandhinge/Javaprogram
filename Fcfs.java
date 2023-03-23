@@ -15,13 +15,18 @@ class Fcfs
         System.out.println("Enter process id of all the process :");
         for(int i=0;i<n;i++)
         {
-            bt[i] = sc.nextInt();
+            pid[i] = sc.nextInt();
         }         
+        System.out.println("Enter burst time of all the process :");
+        for(int i=0;i<n;i++)
+        {
+            bt[i] = sc.nextInt();
+        }        
         int i;
         int wt[] = new int[n];
         wt[0] = 0;
 
-        for(i=0;i<n;i++)
+        for(i=1;i<n;i++)
         {
             wt[i]=(bt[i-1]+wt[i-1]);
         }
@@ -29,7 +34,7 @@ class Fcfs
 
         float twt = 0.0f;
         float tat = 0.0f;
-        for(i=0;i>n;i++)
+        for(i=0;i<n;i++)
         {
             System.out.println(pid[i] + "\t\t" + bt[i] + "\t\t" + wt[i] + "\t\t" + bt[i]+wt[i] + "\t\t");
             //System.out.println(bt[i] + "\t\t");
