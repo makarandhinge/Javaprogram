@@ -14,6 +14,7 @@ public class EAndO3_1 {
         else{
             System.out.println("Entered number is odd");
         }
+        sc.close();
     }
     
 }
