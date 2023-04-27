@@ -1,6 +1,6 @@
 class Animal
 {
-    void eat()
+    void move()
     {
         System.out.println("Eating....");
     }
@@ -17,6 +17,6 @@ class TestInheritance
     {
         Dog d = new Dog();
         d.bark();
-        d.eat();
+        d.move();
     }
 }
