@@ -3,7 +3,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-class Demo
+class DemoEx
 {
     public static void main(String[] args) {
         JFrame a = new JFrame("Login Page");

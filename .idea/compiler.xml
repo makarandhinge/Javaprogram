@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <excludeFromCompile>
       <file url="file://$PROJECT_DIR$/sjf.java" />
+      <file url="file://$PROJECT_DIR$/TestSuper2.java" />
     </excludeFromCompile>
   </component>
 </project>

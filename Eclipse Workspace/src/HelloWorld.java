@@ -1,5 +1,5 @@
 //First Program in Eclipse
-public class HelloWorld {
+class HelloWorld {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
