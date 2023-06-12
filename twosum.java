@@ -12,7 +12,7 @@ class twoSum {
         int[] nums = new int[n];
         for(int i = 0;i < n;i++)
         {
-            num
+            num;
         }
     }
 }
