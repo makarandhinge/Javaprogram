@@ -1,49 +1,44 @@
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+public class ActionListenerEx extends Frame implements ActionListener {
 
+    Button addButton;
+    TextField numField1, numField2;
+    Label resultLabel;
 
-import javafx.event.ActionEvent;
+    public ActionListenerEx() {
+        setTitle("ActionListener Example");
+        setSize(300, 200);
+        setLayout(new FlowLayout());
 
- class ActionListenerex extends Frame implements ActionListener{
-    TextField t1,t2,t3;
-    Button bt;
-    public ActionListenerex()
-    {
-        
-        
+        numField1 = new TextField(10);
+        numField2 = new TextField(10);
+        addButton = new Button("Add");
+        resultLabel = new Label("Result: ");
 
-        t1 = new TextField();
-        t1.setBounds(10,50,70,30);
-        t2 = new TextField();
-        t2.setBounds(10,100,70,30);
-        t3 = new TextField();
-        t3.setBounds(10,200,70,30);
-        bt = new Button("Add");
-        bt.setBounds(10,300,70,30);
-        add(t1);
-        add(t2);
-        add(t3);
-        add(bt);
+        addButton.addActionListener(this); // Register the current class as ActionListener
 
-        bt.addActionListener(this);
-        setSize(250,250);
+        add(new Label("Enter two numbers: "));
+        add(numField1);
+        add(numField2);
+        add(addButton);
+        add(resultLabel);
         setVisible(true);
-        setTitle("First Action Listener Program");
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
         
-
+            int num1 = Integer.parseInt(numField1.getText());
+            int num2 = Integer.parseInt(numField2.getText());
+            int result = num1 + num2;
+            resultLabel.setText("Result: " + result);
+       
     }
 
-    public void actionPerformed(ActionEvent ae)
-    {
-        int a = Integer.parseInt(t1.getText());
-        int b = Integer.parseInt(t2.getText());
-        int c = a+b;
-
-        t3.setText(" " +c);
-    }
-    
     public static void main(String[] args) {
-        ActionListenerex al = new ActionListenerex();
+        ActionListenerEx al = new ActionListenerEx();
     }
 }
