@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MergeSortedArray",
+            "request": "launch",
+            "mainClass": "MergeSortedArray",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "cal",
             "request": "launch",
             "mainClass": "cal",
